@@ -4,6 +4,10 @@ This Go module provides a set of functions and types for working with relational
 
 ## Usage
 
+```
+go get github.com/ItsAminZamani/dbmeta@0.1.0
+```
+
 ### Retrieving a schema
 
 To retrieve a schema for a database, use the `GetSchema` function of the appropriate driver:
