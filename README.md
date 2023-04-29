@@ -1,4 +1,4 @@
-# My Relational Database Schemas Module
+# Relational Database Schemas Module
 
 This Go module provides a set of functions and types for working with relational database schemas, tables, and column types. It also includes implementations for popular database drivers to allow users to easily retrieve schema information for their databases.
 
