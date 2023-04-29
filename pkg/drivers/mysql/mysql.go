@@ -142,3 +142,13 @@ func (d *MySQLDriver) GetColumns(schemaName, tableName string) ([]*schema.Column
 	}
 	return columns, nil
 }
+
+// TestConnection tests the connection to a Postgres database.
+func (d *MySQLDriver) TestConnection() error {
+	db, err := sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", d.Username, d.Password, d.Host, d.Port, d.DatabaseName))
+	if err != nil {
+		return err
+	}
+	defer db.Close()
+	return db.Ping()
+}

@@ -88,3 +88,16 @@ func GetColumns(driver interface{}, schemaName string, tableName string) ([]*sch
 		return nil, &ErrInvalidDriver{Driver: "unknown"}
 	}
 }
+
+func TestConnection(driver interface{}) error {
+	switch d := driver.(type) {
+	case *mysql.MySQLDriver:
+		return d.TestConnection()
+	case *postgres.PostgresDriver:
+		return d.TestConnection()
+	case *mssql.MSSQLDriver:
+		return d.TestConnection()
+	default:
+		return &ErrInvalidDriver{Driver: "unknown"}
+	}
+}

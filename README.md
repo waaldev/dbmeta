@@ -5,7 +5,7 @@ This Go module provides a set of functions and types for working with relational
 ## Usage
 
 ```
-go get github.com/ItsAminZamani/dbmeta@0.1.0
+go get github.com/ItsAminZamani/dbmeta@v0.2.0
 ```
 
 ### Retrieving a schema

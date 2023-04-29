@@ -160,3 +160,14 @@ func (d *PostgresDriver) GetColumns(schemaName, tableName string) ([]*schema.Col
 
 	return columns, nil
 }
+
+// TestConnection tests the connection to a Postgres database.
+func (d *PostgresDriver) TestConnection() error {
+	db, err := sql.Open("postgres", fmt.Sprintf("postgres://%s:%s@%s:%d/%s?sslmode=disable", d.Username,
+		d.Password, d.Host, d.Port, d.DatabaseName))
+	if err != nil {
+		return err
+	}
+	defer db.Close()
+	return db.Ping()
+}
