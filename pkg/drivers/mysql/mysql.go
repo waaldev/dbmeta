@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/ItsAminZamani/dbmeta/pkg/schema"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/siaminz/dbmeta/pkg/schema"
 )
 
 // MySQLDriver is a driver for MySQL databases.

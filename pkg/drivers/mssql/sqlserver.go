@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/ItsAminZamani/dbmeta/pkg/schema"
 	_ "github.com/denisenkom/go-mssqldb"
+	"github.com/siaminz/dbmeta/pkg/schema"
 )
 
 // SQLServerDriver is a driver for SQL Server databases.

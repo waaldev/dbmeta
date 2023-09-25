@@ -5,7 +5,7 @@ This Go module provides a set of functions and types for working with relational
 ## Usage
 
 ```
-go get github.com/ItsAminZamani/dbmeta@v0.2.0
+go get github.com/siaminz/dbmeta@v0.2.0
 ```
 
 ### Retrieving a schema
@@ -14,7 +14,7 @@ To retrieve a schema for a database, use the `GetSchema` function of the appropr
 
 ```go
 import (
-    "github.com/ItsAminZamani/dbmeta"
+    "github.com/siaminz/dbmeta"
 )
 
 func main() {
@@ -47,7 +47,7 @@ To retrieve tables from a schema, use the `GetTables` function of the appropriat
 
 ```go
 import (
-    "github.com/ItsAminZamani/dbmeta"
+    "github.com/siaminz/dbmeta"
 )
 
 func main() {
@@ -68,7 +68,7 @@ To retrieve columns from a table, use the `GetColumns` function of the appropria
 
 ```go
 import (
-    "github.com/ItsAminZamani/dbmeta"
+    "github.com/siaminz/dbmeta"
 )
 
 func main() {
@@ -87,9 +87,9 @@ func main() {
 
 Currently, the following database drivers are supported:
 
-- MySQL (github.com/ItsAminZamani/dbmeta/pkg/drivers/mysql)
-- PostgreSQL (github.com/ItsAminZamani/dbmeta/pkg/drivers/postgres)
-- SQL Server (github.com/ItsAminZamani/dbmeta/pkg/drivers/mssql)
+- MySQL (github.com/siaminz/dbmeta/pkg/drivers/mysql)
+- PostgreSQL (github.com/siaminz/dbmeta/pkg/drivers/postgres)
+- SQL Server (github.com/siaminz/dbmeta/pkg/drivers/mssql)
 
 More database drivers may be added in the future.
 

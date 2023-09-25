@@ -1,10 +1,10 @@
 package dbmeta
 
 import (
-	"github.com/ItsAminZamani/dbmeta/pkg/drivers/mssql"
-	"github.com/ItsAminZamani/dbmeta/pkg/drivers/mysql"
-	"github.com/ItsAminZamani/dbmeta/pkg/drivers/postgres"
-	"github.com/ItsAminZamani/dbmeta/pkg/schema"
+	"github.com/siaminz/dbmeta/pkg/drivers/mssql"
+	"github.com/siaminz/dbmeta/pkg/drivers/mysql"
+	"github.com/siaminz/dbmeta/pkg/drivers/postgres"
+	"github.com/siaminz/dbmeta/pkg/schema"
 )
 
 type ErrInvalidDriver struct {

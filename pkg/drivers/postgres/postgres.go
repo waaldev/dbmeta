@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/ItsAminZamani/dbmeta/pkg/schema"
 	_ "github.com/lib/pq"
+	"github.com/siaminz/dbmeta/pkg/schema"
 )
 
 // PostgresDriver is a driver for Postgres databases.

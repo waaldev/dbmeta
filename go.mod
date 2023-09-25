@@ -1,4 +1,4 @@
-module github.com/ItsAminZamani/dbmeta
+module github.com/siaminz/dbmeta
 
 go 1.20
 
