@@ -1,3 +1,8 @@
+/**
+ * Author: Amin Zamani
+ * File: schema.go
+ */
+
 package dbmeta
 
 import (
